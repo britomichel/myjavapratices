@@ -1,0 +1,2 @@
+O programa esta escrevendo neste arquivo.
+Parece bacana essa funcionalidade.

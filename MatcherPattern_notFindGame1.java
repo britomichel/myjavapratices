@@ -58,15 +58,11 @@ public class MatcherPattern_notFindGame1 {
 		// carregar Desafio e processar jogo
 		String[] arrDesafio;
 		if (iDesafio == 1) {
-			arrDesafio = new String[] {" a ", " o ", " um ", " uma ", 
-			" as ", " os ", " uns ", " umas "};
+			arrDesafio = new String[] {" a ", " o ", " um ", " uma ", " as ", " os ", " uns ", " umas "};
 		} else if (iDesafio == 2) {
-			arrDesafio = new String[] {" eu ", " tu ", " voce ", " ele ", " ela ", 
-			" vos ", " voces ", " eles ", " elas "};
+			arrDesafio = new String[] {" eu ", " tu ", " voce ", " ele ", " ela ", " vos ", " voces ", " eles ", " elas "};
 		} else {
-			arrDesafio = new String[] {" a ", " o ", " um ", " uma ", " as ", 
-			" os ", " uns ", " umas ", " eu ", " tu ", " voce ", " ele ", " ela ", 
-			" vos ", " voces ", " eles ", " elas "};
+			arrDesafio = new String[] {" a ", " o ", " um ", " uma ", " as ", " os ", " uns ", " umas ", " eu ", " tu ", " voce ", " ele ", " ela ", " vos ", " voces ", " eles ", " elas "};
 		}
 		
 		// Contrutores (inicializar objetos Pattern e Matcher):
@@ -86,11 +82,12 @@ public class MatcherPattern_notFindGame1 {
 		}
 		
 		if (boTemAlgum == false) {
-			System.out.println("Parabens! Voce venceu o desafio!");
+			sTemp = "Parabens! Voce venceu o desafio!";
 		} else {
-			System.out.println("Puxa! Voce perdeu! ... Tente novamente.");
+			sTemp = "Puxa! Voce perdeu! ... Tente novamente.";
 		}
-		
+		System.out.println(sTemp);
+		JOptionPane.showMessageDialog(null, sTemp);
 		
 	}
 	
